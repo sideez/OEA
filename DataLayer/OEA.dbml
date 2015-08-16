@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="OEA" Class="OEADataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=GGC-dev;Initial Catalog=OEA;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="GGCOEAConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.OEA_SaveSelection" Method="OEA_SaveSelection">
+    <Parameter Name="IMIS_ID" Parameter="iMIS_ID" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="Report_Element_ID" Parameter="report_Element_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Participation_ID" Parameter="participation_ID" Type="System.Char" DbType="Char(1)" />
+    <Parameter Name="Value" Parameter="value" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="IP_Address" Parameter="iP_Address" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Comment" Parameter="comment" Type="System.String" DbType="NVarChar(250)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.OEA_VerifyiMIS" Method="OEA_VerifyiMIS">
+    <Parameter Name="iMIS" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="EMAIL" Parameter="eMAIL" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="OEA_VerifyiMISResult">
+      <Column Name="IMISCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.OEA_GetSelectionCount" Method="OEA_GetSelectionCount">
+    <Parameter Name="Report_ID" Parameter="report_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Subreport_ID" Parameter="subreport_ID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="OEA_GetSelectionCountResult">
+      <Column Name="NumberOfPledges" Type="System.Decimal" DbType="Decimal(19,2) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FDA3B7ED-AFC9-4088-BB48-79D9132FC572}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OEA</RootNamespace>
+    <AssemblyName>OEA</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="css\app.css" />
+    <Content Include="css\app4.css" />
+    <Content Include="css\foundation.css" />
+    <Content Include="css\foundation.min.css" />
+    <Content Include="css\general_foundicons.css" />
+    <Content Include="css\general_foundicons_ie7.css" />
+    <Content Include="energy.aspx" />
+    <Content Include="energy.html" />
+    <Content Include="foundation.html" />
+    <Content Include="habitat-artwork.aspx" />
+    <Content Include="habitat.aspx" />
+    <Content Include="history.aspx" />
+    <Content Include="homemade.aspx" />
+    <Content Include="homemade.html" />
+    <Content Include="humans.txt" />
+    <Content Include="img\152px-ggc-logo.png" />
+    <Content Include="img\182px-ggc-logo.png" />
+    <Content Include="img\200px-td-logo.png" />
+    <Content Include="img\68px-nsp-logo.png" />
+    <Content Include="img\article-bg.png" />
+    <Content Include="img\big-nsp-logo.png" />
+    <Content Include="img\content-bg.png" />
+    <Content Include="img\energy-icon.png" />
+    <Content Include="img\energy-image.png" />
+    <Content Include="img\energy-nav.png" />
+    <Content Include="img\foundation\orbit\bullets.jpg" />
+    <Content Include="img\foundation\orbit\left-arrow-small.png" />
+    <Content Include="img\foundation\orbit\left-arrow.png" />
+    <Content Include="img\foundation\orbit\loading.gif" />
+    <Content Include="img\foundation\orbit\mask-black.png" />
+    <Content Include="img\foundation\orbit\pause-black.png" />
+    <Content Include="img\foundation\orbit\right-arrow-small.png" />
+    <Content Include="img\foundation\orbit\right-arrow.png" />
+    <Content Include="img\foundation\orbit\rotator-black.png" />
+    <Content Include="img\foundation\orbit\timer-black.png" />
+    <Content Include="img\ggc-logo.png" />
+    <Content Include="img\homemade-icon.png" />
+    <Content Include="img\homemade-image1.png" />
+    <Content Include="img\homemade-image2.png" />
+    <Content Include="img\homemade-image3.png" />
+    <Content Include="img\homemade-nav.png" />
+    <Content Include="img\loblaw-logo.png" />
+    <Content Include="img\main-bg.jpg" />
+    <Content Include="img\meal-icon.png" />
+    <Content Include="img\meal-image.png" />
+    <Content Include="img\meal-nav.png" />
+    <Content Include="img\new-nsp-logo.png" />
+    <Content Include="img\nsp-icon-sprite.png" />
+    <Content Include="img\nsp-logo.png" />
+    <Content Include="img\nsp-nav-icon-sprite.png" />
+    <Content Include="img\NSP2012_Unit2ndChilliwackGirlGuides_Achieve.jpg" />
+    <Content Include="img\NSP2012_Unit2ndChilliwackGirlGuides_Activity.jpg" />
+    <Content Include="img\NSP2012_Unit2ndChilliwackGirlGuides_Pledge.jpg" />
+    <Content Include="img\pledge-icon.png" />
+    <Content Include="img\pledge-nav.png" />
+    <Content Include="img\sears-logo.jpg" />
+    <Content Include="img\sfi-logo.png" />
+    <Content Include="img\sobeys-logo.png" />
+    <Content Include="img\td-logo.jpg" />
+    <Content Include="img\td-logo.png" />
+    <Content Include="img\tree-icon.png" />
+    <Content Include="img\tree-image.png" />
+    <Content Include="img\tree-nav.png" />
+    <Content Include="home.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="index.html" />
+    <Content Include="js\app.js" />
+    <Content Include="js\foundation.min.js" />
+    <Content Include="js\jquery.foundation.accordion.js" />
+    <Content Include="js\jquery.foundation.alerts.js" />
+    <Content Include="js\jquery.foundation.buttons.js" />
+    <Content Include="js\jquery.foundation.forms.js" />
+    <Content Include="js\jquery.foundation.mediaQueryToggle.js" />
+    <Content Include="js\jquery.foundation.navigation.js" />
+    <Content Include="js\jquery.foundation.orbit.js" />
+    <Content Include="js\jquery.foundation.reveal.js" />
+    <Content Include="js\jquery.foundation.tabs.js" />
+    <Content Include="js\jquery.foundation.tooltips.js" />
+    <Content Include="js\jquery.foundation.topbar.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.placeholder.js" />
+    <Content Include="js\jquery.queryloader2.js" />
+    <Content Include="js\modernizr.foundation.js" />
+    <Content Include="js\validate.min.js" />
+    <Content Include="js\validate_helper.js" />
+    <Content Include="meal.aspx" />
+    <Content Include="meal.html" />
+    <Content Include="nsp-artwork.aspx" />
+    <Content Include="online_initiative.aspx" />
+    <Content Include="pledge.aspx" />
+    <Content Include="pledge.html" />
+    <Content Include="robots.txt" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="treasure-artwork.aspx" />
+    <Content Include="treasure.aspx" />
+    <Content Include="tree.aspx" />
+    <Content Include="tree.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="WebService1.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataLayer\OEA.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OEA.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="energy.aspx.cs">
+      <DependentUpon>energy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="energy.aspx.designer.cs">
+      <DependentUpon>energy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="habitat-artwork.aspx.cs">
+      <DependentUpon>habitat-artwork.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="habitat-artwork.aspx.designer.cs">
+      <DependentUpon>habitat-artwork.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="habitat.aspx.cs">
+      <DependentUpon>habitat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="habitat.aspx.designer.cs">
+      <DependentUpon>habitat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="history.aspx.cs">
+      <DependentUpon>history.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="history.aspx.designer.cs">
+      <DependentUpon>history.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homemade.aspx.cs">
+      <DependentUpon>homemade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homemade.aspx.designer.cs">
+      <DependentUpon>homemade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="meal.aspx.cs">
+      <DependentUpon>meal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="meal.aspx.designer.cs">
+      <DependentUpon>meal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nsp-artwork.aspx.cs">
+      <DependentUpon>nsp-artwork.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nsp-artwork.aspx.designer.cs">
+      <DependentUpon>nsp-artwork.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="online_initiative.aspx.cs">
+      <DependentUpon>online_initiative.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="online_initiative.aspx.designer.cs">
+      <DependentUpon>online_initiative.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pledge.aspx.cs">
+      <DependentUpon>pledge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pledge.aspx.designer.cs">
+      <DependentUpon>pledge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="treasure-artwork.aspx.cs">
+      <DependentUpon>treasure-artwork.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="treasure-artwork.aspx.designer.cs">
+      <DependentUpon>treasure-artwork.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="treasure.aspx.cs">
+      <DependentUpon>treasure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="treasure.aspx.designer.cs">
+      <DependentUpon>treasure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tree.aspx.cs">
+      <DependentUpon>tree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tree.aspx.designer.cs">
+      <DependentUpon>tree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService1.asmx.cs">
+      <DependentUpon>WebService1.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataLayer\OEA.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>OEA.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="doc\alternative-activities-supporting-animal-habitats.pdf" />
+    <None Include="doc\alternative-activities-trash-to-treasure.pdf" />
+    <None Include="doc\backgrounder-be-an-energy-detective.pdf" />
+    <None Include="doc\backgrounder-bottles-bags.pdf" />
+    <None Include="doc\backgrounder-homemade-cleaning-products.pdf" />
+    <None Include="doc\backgrounder-make-your-own-green-products.pdf" />
+    <None Include="doc\backgrounder-map-your-meal.pdf" />
+    <None Include="doc\backgrounder-plant-a-tree.pdf" />
+    <None Include="doc\backgrounder-supporting-animal-habitats.pdf" />
+    <None Include="doc\backgrounder-transforming-trash-to-treasure.pdf" />
+    <None Include="doc\backgrounder-using-reusable-bottles-and-bags.pdf" />
+    <None Include="doc\duck-box-application.pdf" />
+    <None Include="doc\energy-audit-record.pdf" />
+    <None Include="doc\getting-started--how-to-map-your-meal.pdf" />
+    <None Include="doc\how-to-build-duck-box.pdf" />
+    <None Include="doc\how-to-energy-audit-record.pdf" />
+    <None Include="doc\how-to-get-involved.pdf" />
+    <None Include="doc\how-to-homemade-cleaning-products.pdf" />
+    <None Include="doc\how-to-make-your-own-green-products.pdf" />
+    <None Include="doc\how-to-map-your-meal.pdf" />
+    <None Include="doc\how-to-pledge-report.pdf" />
+    <None Include="doc\how-to-reusable-bag.pdf" />
+    <None Include="doc\how-to-simplified-duck-box-instructions.pdf" />
+    <None Include="doc\how-to-simplified-energy-audit-record.pdf" />
+    <None Include="doc\how-to-support-restore-a-wetland.pdf" />
+    <None Include="doc\how-to-support-restore-wetland.pdf" />
+    <None Include="doc\how-to-upstyle-an-old-tshirt-into-a-reusable-bag.pdf" />
+    <None Include="doc\how-to-wool-dryer-balls.pdf" />
+    <None Include="doc\operation-earth-action-complete-package-year-two.pdf" />
+    <None Include="doc\operation-earth-action.pdf" />
+    <None Include="doc\recipies-and-instructions-how-to-make-your-own-green-products.pdf" />
+    <None Include="doc\sobeys-how-to-map-your-meal.pdf" />
+    <None Include="doc\submission-details.pdf" />
+    <None Include="doc\why-this-is-important-backgrounder-be-an-energy-detective.pdf" />
+    <None Include="doc\why-this-is-important-backgrounder-map-your-meal.pdf" />
+    <None Include="doc\why-this-is-important-backgrounder-planting-a-tree.pdf" />
+    <None Include="fonts\general_foundicons.eot" />
+    <None Include="fonts\general_foundicons.svg" />
+    <None Include="fonts\general_foundicons.ttf" />
+    <None Include="fonts\general_foundicons.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataLayer\OEA.dbml.layout">
+      <DependentUpon>OEA.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57433</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

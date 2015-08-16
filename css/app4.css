@@ -1,0 +1,718 @@
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Online Initiative Page
+:: Splash Infographic
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+/* Main Background */
+
+html { 
+	background: url('../img/main-bg.jpg') no-repeat center center fixed;  
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body { background: none; }
+
+/* Box Sizing */
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Typography */
+
+h1 { color: #387c2c; font-size: 42px; line-height: 49px; text-transform: uppercase; }
+h2 { color: #71a233; font-size: 35px; line-height: 42px; }
+h3 { color: #00a74e; font-size: 28px; line-height: 35px; font-weight: normal; text-transform: normal; }
+h4 { color: #d31145; font-size: 21px; line-height: 28px; font-weight: normal; margin: 0; }
+p { color: #00549e; line-height: 21px; }
+a, a:link, a:active, a:visited { color: #663700; font-weight: bold; }
+a:hover { color: #49a942; text-decoration: underline; background-color: transparent; }
+ul, li { color: #00549e; }
+
+/* Image */
+
+img { max-width: none;}
+a img { border: 0; }
+
+/* Alignments */
+
+.right {
+	float: right;
+}
+
+.left {
+	 float: left; 
+}
+
+/* Buttons */
+
+.button {
+	text-transform: uppercase;
+}
+
+.button:hover {
+	text-decoration: none;
+}
+
+.button.success {
+	background-color: #8bc53e;
+}
+
+.button.success:hover {
+	background-color: #387c2c;
+}
+
+/* Top Bar */
+
+.topbar	{
+	background-color: #00549e;
+	height: 110px;
+	-webkit-box-shadow: 0px 0px 15px #666;
+	-moz-box-shadow: 0px 0px 15px #666;
+	box-shadow: 0px 0px 15px #666;
+}
+
+/* Header */
+
+.header { 
+	padding: 8px 0;
+	background-color: #ffffff;
+}
+
+.nsp-project-title h3 {
+	font-weight: bold;
+    color: #387c2c;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.nsp-project-title h4 {
+	text-transform: uppercase;
+    font-weight: bold;
+    color: #d31145;
+}
+
+.title-sponsor {
+	border-left: 2px solid #499449;
+}
+
+/* Navigation */
+
+.row.nav-bg {
+	background-color: #54AB54;
+	-webkit-box-shadow: 0px 0px 0px #ccc;
+	-moz-box-shadow: 0px 0px 15px #666; 
+	box-shadow: 0px 3px 5px #666;
+}
+
+nav.primary {
+	float: right;
+}
+
+nav.primary ul {
+	margin: 0px;
+}
+
+nav.primary ul li {
+	display: inline-block;
+	padding-top: 14px; 
+	border: 1px solid #ddd;
+	margin-top: 6px;
+	margin-left: 34px;
+	background: #499449;
+	width: 90px;
+	height: 90px;
+}
+
+nav.primary ul li img:hover {
+	background-color: #8bc53e;
+	transition: all 1s ease-out;
+	-moz-transition: all 1s ease-out;
+	-webkit-transition: all 1s ease-out;
+	-o-transition: all 1s ease-out;
+	border-radius: 50px;
+}
+
+.primary i {
+	display: block;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	margin: auto;
+}
+
+.nav-border {
+	border-bottom: 3px solid #ffffff;
+	padding-top: 7px;
+	width: 50%;
+	margin: auto;
+}
+
+nav.primary li:hover .nav-border {
+	border-bottom: 3px solid #8bc53e;
+}
+
+.nav-title {
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+/* NSP Navigation Icons */
+
+.nav-icon-water-bottle {
+	background: url('../img/nsp-nav-icon-sprite.png') no-repeat 0 0;
+	width: 11px;
+	height: 27px;
+}
+
+.nav-icon-shopping-bag {
+	background: url('../img/nsp-nav-icon-sprite.png') no-repeat 0 -28px;
+	width: 24px;
+	height: 27px;
+}
+
+.nav-icon-green-products {
+	background: url('../img/nsp-nav-icon-sprite.png') no-repeat -1px -56px;
+	width: 22px;
+	height: 27px;
+}
+
+.nav-icon-map-your-meals {
+	background: url('../img/nsp-nav-icon-sprite.png') no-repeat 0 -84px;
+	width: 27px;
+	height: 27px;
+}
+
+.nav-icon-energy-detective {
+	background: url('../img/nsp-nav-icon-sprite.png') no-repeat 0 -140px;
+	width: 25px;
+	height: 27px;
+}
+
+.nav-icon-plant-a-tree {
+	background: url('../img/nsp-nav-icon-sprite.png') no-repeat 0 -112px;
+	width: 24px;
+	height: 27px;
+}
+
+.nav-icon-animal-habitat {
+	background: url('../img/nsp-nav-icon-sprite.png') no-repeat -1px -224px;
+	width: 25px;
+	height: 22px;
+}
+
+.nav-icon-trash-to-treasure {
+	background: url('../img/nsp-nav-icon-sprite.png') no-repeat 0 -196px;
+	width: 28px;
+	height: 27px;
+}
+
+.nav-icon-pledge {
+	background: url('../img/nsp-nav-icon-sprite.png') no-repeat 0 -168px;
+	width: 11px;
+	height: 27px;
+}
+
+
+/* Row Main */
+
+.main {
+	margin-top: 14px;
+}
+
+.content {
+	background: url('../img/content-bg.png') repeat;
+	border: 1px solid #ffffff;
+}
+
+/* Reporting Column */
+
+.reporting {
+	text-align: right;
+	margin-top: 14px;
+}
+
+/* Pledge Row */
+
+.pledge {
+	margin-top: 14px;
+}
+
+/* Side Images */
+
+#big-nsp-logo {
+	position: absolute;
+	top: 300px;
+	right: 0;
+	width: 302px;
+	height: 252px;
+}
+
+#meal-image {
+	position: absolute;
+	top: 220px;
+	right: 0;
+	width: 545px;
+	height: 322px;
+}
+
+#homemade-image1{
+	position: absolute;
+	top: 340px;
+	right: 30px;
+	width: 122px;
+	height: 141px;
+}
+
+#homemade-image2 {
+	position: absolute;
+	top: 320px;
+	right: 180px;
+	width: 121px;
+	height: 158px;
+}
+
+#homemade-image3 {
+	position: absolute;
+	top: 243px;
+	right: 100px;
+	width: 144px;
+	height: 165px;
+}
+
+#tree-image {
+	position: absolute;
+	top: 240px;
+	right: 10px;
+	width: 377px;
+	height: 426px;
+}
+
+#energy-image {
+	position: absolute;
+	top: 190px;
+	right: 0;
+	width: 422px;
+	height: 410px;
+}
+
+/* Sponsors */
+
+.sponsors {
+	font-size: 14px;
+	color: #00a74e;
+}
+
+/* Form Error and Success Box */
+
+.error_box {
+    background:#FAD3C4;
+    border:1px solid #A75B4E;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    color:#444444;
+    display:none;
+    font-size:12px;
+    margin:0px 0px 15px 0px;
+    padding:8px 8px;
+}
+
+.success_box {
+    background:#E2F1BB;
+    border:1px solid #598800;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    color:#000000;
+    display:none;
+    font-size:12px;
+    margin:0px 0px 15px 0px;
+    padding:8px 8px;
+}
+
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+.row:after,
+.clearfix:after {
+  clear: both; }
+.row,
+.clearfix {
+  zoom: 1; }
+
+/* You can also use a <br class="clear" /> to clear columns */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* -----------------------------------------
+   Online Initiative Page
+----------------------------------------- */
+
+.oi-message {
+	font-size: 21px;
+	line-height: 28px;
+	color: #00549e;
+}
+
+.star-divider {
+	margin: 15px 0;
+	color: #387c2c;
+}
+
+.three-steps .step {
+	/*background: #6DBD36;*/
+	background-color: rgba(109,189,54, 0.7);
+	border: 1px solid #6DBD36;
+	padding: 5px;
+	width: 290px;
+	height: 290px;
+}
+
+.three-steps i {
+	font-weight: bold;
+	font-size: 28px;
+	position: absolute;
+	top: 150px;
+	left: -13px;
+	color: #387c2c;
+}
+
+.three-steps .step h2 {
+	color: #d31145;
+}
+
+/* -----------------------------------------
+   Splash Infographic
+----------------------------------------- */
+
+header.splash {
+	background-color: #00549e;
+}
+
+.splash-infographic h4,
+.splash-infographic p,
+.splash-infographic ul,
+.splash-infographic li,
+.splash-infographic a {
+	color: #ffffff;
+}
+
+.spacer {
+	margin: 28px 0;
+}
+
+.logo {
+	background: url('../img/nsp-icon-sprite.png') no-repeat scroll 0 -335px transparent;
+	width: 161px;
+	height: 68px;
+	display: block;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	/*padding: 14px 0;*/
+	position: relative;
+	top: 7px;
+	margin-bottom: 32px;
+}
+
+.top-bar {
+	background-color: #00549e;
+}
+
+/* Splash Button */
+
+.splash-btn {
+	width: 100%;
+	margin-top: 74px;
+	border: none;
+	font-family: "Segoe UI Bold", arial, sans-serif;
+	font-size: 21px;
+	line-height: 28px;
+	background-color: #00549e;
+}
+
+@media only screen and (max-width: 767px) { .splash-btn { margin: 20px 0 13px 0; } }
+
+/* Infographic Box */
+
+.info-box,
+.logo-box {
+	padding: 7px 21px;
+	margin: 7px 0;
+}
+
+.activities {
+	height: 326px;
+}
+
+@media only screen and (max-width: 767px) { .activities { height: auto; } }
+
+.national-box {
+	background-color: #00549e;
+}
+
+.sponsor-box {
+	background-color: #ffffff;
+}
+
+.enter-box {
+	background-color: #d31145;
+}
+
+.water-bottles {
+	background-color: #50b4e4;
+}
+
+.shopping-bags {
+	background-color: #705836;
+}
+
+.green-products {
+	background-color: #2b8c2b;
+}
+
+.map-your-meals {
+	background-color: #EE3124;
+}
+
+.energy-detective {
+	background-color: #54ab54;
+}
+
+.plant-a-tree {
+	background-color: #335c16;
+}
+
+.animal-habitat {
+	background-color: #28aa28;
+}
+
+.trash-to-treasure {
+	background-color: #F16D9A;
+}
+
+.splash-title {
+	text-transform: uppercase;
+	margin-bottom: 14px;
+	font-family: "Segoe UI Bold", arial, sans-serif;
+}
+
+.nsp-title,
+.nsp-title a {
+	font-family: "Segoe UI Bold", arial, sans-serif;
+	text-transform: uppercase;
+}
+
+.sub-title,
+.sub-title a {
+	font-family: "Segoe UI SemiBold", arial, sans-serif;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+
+/* Counter */
+
+.icon-counter,
+.icon-counter li {
+	line-height: 24px;
+	padding: 0;
+	margin: 14px 0 0;
+}
+
+.icon-counter li {
+	display: inline-block;
+}
+
+.counter {
+	font-size: 49px;
+	font-family: "Segoe UI Light", arial, sans-serif;
+	color: #ffffff;
+}
+
+.pledge-counter {
+	font-size: 70px;
+	font-family: "Segoe UI Light", arial, sans-serif;
+	color: #ffffff;
+}
+
+.counter-caption {
+	text-transform: uppercase;
+}
+
+.splash-infographic i {
+	display: block;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	margin-right: 15px;
+}
+
+/* NSP Icons */
+
+.icon-water-bottle {
+	background: url('../img/nsp-icon-sprite.png') no-repeat scroll 0 0 transparent;
+	width: 20px;
+	height: 47px;
+}
+
+.icon-shopping-bag {
+	background: url('../img/nsp-icon-sprite.png') no-repeat scroll 0 -48px transparent;
+	width: 42px;
+	height: 47px;
+}
+
+.icon-green-products {
+	background: url('../img/nsp-icon-sprite.png') no-repeat 0 -96px;
+	width: 39px;
+	height: 46px;
+}
+
+.icon-map-your-meals {
+	background: url('../img/nsp-icon-sprite.png') no-repeat 0 -143px;
+	width: 47px;
+	height: 47px;
+}
+
+.icon-energy-detective {
+	background: url('../img/nsp-icon-sprite.png') no-repeat 0 -239px;
+	width: 44px;
+	height: 47px;
+}
+
+.icon-plant-a-tree {
+	background: url('../img/nsp-icon-sprite.png') no-repeat 0 -191px;
+	width: 43px;
+	height: 47px;
+}
+
+.icon-animal-habitat {
+	background: url('../img/nsp-icon-sprite.png') no-repeat 0 -452px;
+	width: 44px;
+	height: 47px;
+}
+
+.icon-trash-to-treasure {
+	background: url('../img/nsp-icon-sprite.png') no-repeat 0 -404px;
+	width: 48px;
+	height: 47px;
+}
+
+.icon-pledge {
+	background: url('../img/nsp-icon-sprite.png') no-repeat 0 -287px;
+	width: 21px;
+	height: 47px;
+}
+
+.splash-infographic .column,
+.splash-infographic .columns {
+	padding: 0 7px; 
+}
+
+.click-me,
+.click-me a {
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+
+/*.info-box:hover {
+	background-color: #174a7c;
+	-webkit-transition: all 0.5s ease-out; 
+    -moz-transition: all 0.5s ease-out; 
+    -o-transition: all 0.5s ease-out; 
+     transition: all 0.5s ease-out; 
+}*/
+
+/*.info-box:hover ul li,
+.info-box:hover p,
+.info-box:hover span {
+	opacity: 0;
+	display: none;
+  	-webkit-transition: all 0.5s ease-out; 
+    -moz-transition: all 0.5s ease-out; 
+    -o-transition: all 0.5s ease-out; 
+     transition: all 0.5s ease-out; 
+}*/
+
+/*.info-box:hover div.click-me,
+.info-box:hover .click-me a {
+	opacity: 1;
+	display: block;
+	margin: 35px 0;
+	position: relative;
+	top: 10%;
+	-webkit-transition: all 0.5s ease-in; 
+    -moz-transition: all 0.5s ease-in; 
+    -o-transition: all 0.5s ease-in; 
+     transition: all 0.5s ease-in; 
+}*/
+
+.footer a {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 28px;
+}
+
+.enter-site {
+	position: absolute;
+	top: 21px;
+	right: 21px;
+	text-decoration: underline;
+}
+
+.splash-infographic a:hover {
+	text-decoration: none;
+}
+
+.action-btn {
+    text-transform: uppercase;
+    background-color: #000000\9;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.action-btn:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.sponsor-box img {
+	margin-top: 11px;
+}

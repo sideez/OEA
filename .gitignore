@@ -1,0 +1,6 @@
+*.config
+Web.config
+/doc
+/App_Data
+/Account
+

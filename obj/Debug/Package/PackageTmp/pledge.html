@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>National Service Project - Operation Earth Action</title>
+  
+  <!-- Included CSS Files (Uncompressed) -->
+  <link rel="stylesheet" href="css/foundation.css">
+  
+  <!-- Included CSS Files (Compressed) -->
+  <!--
+  <link rel="stylesheet" href="css/foundation.min.css">
+  -->
+  <link rel="stylesheet" href="css/app.css">
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!--http://localhost:55684/WebService1.asmx -->
+
+  <script >
+  
+  </script>
+</head>
+<body>
+
+  <div class="topbar fixed">
+
+    <div class="row header">
+
+      <div class="two columns nsp-logo">
+            
+        <a href="index.html">
+          <img src="img/nsp-logo.png" alt="National Service Project" title="National Service Project Logo">
+        </a>
+
+      </div>
+
+      <div class="two columns ggc-logo">
+
+        <a href="http://www.girlguides.ca">
+          <img src="img/ggc-logo.png" alt="Girl Guides of Canada" title="Girl Guides of Canada">
+        </a>
+
+      </div>
+
+      <div class="eight columns">
+        
+        <nav class="primary">
+
+          <ul class="no-bullet">
+
+            <li>
+              <a href="pledge.html">
+              <img src="img/pledge-nav.png" alt="Pledge" title="Pledge">
+              </a>
+            </li>
+
+            <li>
+              <a href="meal.html">
+              <img src="img/meal-nav.png" alt="Map your Meal" title="Map your Meal">
+              </a>
+            </li>
+
+            <li>
+              <a href="homemade.html">
+              <img src="img/homemade-nav.png" alt="Homemade Cleaning and Care Products" title="Homemade Cleaning and Care Products">
+              </a>
+            </li>
+
+            <li>
+              <a href="tree.html">
+              <img src="img/tree-nav.png" alt="Plant a Tree" title="Plant a Tree">
+              </a>
+            </li>
+
+            <li>
+              <a href="energy.html">
+              <img src="img/energy-nav.png" alt="Be an Energy Detective" title="Be an Energy Detective">
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="row main">
+
+    <div class="six columns content">
+      
+      <h1>Pledge</h1>
+      <p>GGC Members and supporters are asked to think about their personal impact on the environment and make a pledge to take action for a better environment. There are two specific actions we are asking Members to make:</p>
+    </div>
+
+    <div class="six columns reporting">
+
+      <h3>Total Count: <span id="totalCount">3221</span></h3> 
+      <p>
+          <a id="pledgeButton" class="radius success button" data-reveal-id="unitPledgeReport" href="#">Units Pledge Here</a>
+        </p>
+        <p>
+          <a id="pledgeButton" class="radius success button" data-reveal-id="individualPledgeReport" href="#">Individuals Pledge Here</a>
+        </p>
+
+    </div>
+
+  </div>
+
+  <div class="row pledge">
+
+    <div class="six columns content">
+      
+      <h3>Reusable Water Bottles</h3>
+      <p>Recycling is great, but let’s start with the first “R” – Reduce! Girls and Units are encouraged to think about all the one-use drink bottles they use and pledge to instead use a reusable bottle whenever possible.</p>
+      <p>Show the world how GGC reduces waste with one of our reusable drink containers, like this fashionable tumbler available from the Girl Guide Store!</p>
+      <h4>Links</h4>
+      <ul class="disc">
+        <li><a href="#">How To</a></li>
+        <li><a href="#">Why This is Important</a></li>
+      </ul>
+
+    </div>
+
+    <div class="six columns content">
+    
+      <h3>Reusable Shopping Bags</h3>
+      <p>Whether paper or plastic, one-use bags use a lot of resources and create a lot of waste. Instead, girls and Units will use their crafting skills to “upcycle” their own reusable bags out of old t-shirts, like maybe an old GGC uniform t-shirt or a favourite that they have grown out of.</p>     
+      <h4>Links</h4>
+      <ul class="disc">
+        <li><a href="#">How to upstyle an old T-shirt into a reusable bag</a></li>
+        <li><a href="#">Why This is Important</a></li>
+      </ul>
+      <p><em class="sponsors">Brought to you by:</em></p>
+      <a href="#">
+        <img src="img/loblaw-logo.png" alt="Loblaw">
+      </a>
+
+    </div>  
+
+  </div>
+
+    <!-- Reporting Modal Begin -->
+
+  <div id="unitPledgeReport" class="reveal-modal medium">
+   
+    <form  id="form1" action="http://localhost:55684/pledge.aspx" method="post">
+      <fieldset>
+
+        <legend><h3>Map your Meal Report</h3></legend>
+
+        <div class="clearfix">
+          
+          <div class="six columns">
+            <h4>For Units:</h4>
+            <input name = "UnitiMISNum" type="text" placeholder="Unit iMIS #" id="UnitiMISNum">
+            <input type="text" placeholder="# of Girls">
+            <input type="text" placeholder="# of Adults">
+            <input type="text" placeholder="# of Non-Members">
+          </div>
+
+          <div class="six columns">
+            <p>I/we pledge to take action for a better environment by:</p>
+            <p>
+              <label for="waterBottles">
+                <input type="checkbox" id="waterBottles">
+                <span class="custom checkbox"></span> Using a reusable water bottle whenever possible.
+              </label>
+            </p>
+            <p>
+              <label for="shoppingBags">
+                <input type="checkbox" id="shoppingBags">
+                <span class="custom checkbox"></span> Using a reusable shopping bags whenever possible.
+              </label>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="submit-button" style="margin: 14px 15px;">
+          <input class="button" type="submit" >
+        </div>
+
+      </fieldset>
+    </form>
+
+    <a class="close-reveal-modal">&#215;</a>
+
+  </div>
+
+  <div id="individualPledgeReport" class="reveal-modal medium">
+
+    <form id="form2" action="">
+      <fieldset>
+
+        <legend><h3>Map your Meal Report</h3></legend>
+
+        <div class="clearfix">
+          
+          <div class="six columns">
+            <h4>For Individuals:</h4>
+            <input type="text" placeholder="Personal iMIS #">
+            <input type="text" placeholder="# of Girls">
+            <input type="text" placeholder="# of Adults">
+            <input type="text" placeholder="# of Non-Members">
+          </div>
+
+          <div class="six columns">
+            <p>I/we pledge to take action for a better environment by:</p>
+            <p>
+              <label for="waterBottles">
+                <input type="checkbox" id="waterBottles">
+                <span class="custom checkbox"></span> Using a reusable water bottle whenever possible.
+              </label>
+            </p>
+            <p>
+              <label for="shoppingBags">
+                <input type="checkbox" id="shoppingBags">
+                <span class="custom checkbox"></span> Using a reusable shopping bags whenever possible.
+              </label>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="submit-button" style="margin: 14px 15px;">
+          <input class="button" type="submit">
+        </div>
+
+      </fieldset>
+    </form>
+
+    <a class="close-reveal-modal">&#215;</a>
+
+  </div> <!-- Reporting Modal End -->
+
+ <!-- <script type="text/javascript">
+    $(document).ready(function() {
+      $('#unitPledgeButton').click(function() {
+        $('#unitPledgeReport').reveal();
+      });
+      $('#individualPledgeButton').click(function() {
+        $('#individualPledgeReport').reveal();
+      });
+    });
+  </script>-->
+  
+  
+  <!-- Included JS Files (Uncompressed) -->
+  <!--
+  
+  <script src="js/jquery.js"></script>
+  
+  <script src="js/jquery.foundation.mediaQueryToggle.js"></script>
+  
+  <script src="js/jquery.foundation.forms.js"></script>
+  
+  <script src="js/jquery.foundation.reveal.js"></script>
+  
+  <script src="js/jquery.foundation.orbit.js"></script>
+  
+  <script src="js/jquery.foundation.navigation.js"></script>
+  
+  <script src="js/jquery.foundation.buttons.js"></script>
+  
+  <script src="js/jquery.foundation.tabs.js"></script>
+  
+  <script src="js/jquery.foundation.tooltips.js"></script>
+  
+  <script src="js/jquery.foundation.accordion.js"></script>
+  
+  <script src="js/jquery.placeholder.js"></script>
+  
+  <script src="js/jquery.foundation.alerts.js"></script>
+  
+  <script src="js/jquery.foundation.topbar.js"></script>
+  
+  -->
+  
+  <!-- Included JS Files (Compressed) -->
+  <script src="js/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="js/app.js"></script>
+</body>
+</html>
