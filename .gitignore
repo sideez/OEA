@@ -1,3 +1,4 @@
+*.dll
 *.config
 Web.config
 /doc
